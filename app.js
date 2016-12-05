@@ -1,4 +1,4 @@
-angular.module('portfolioApp', ['ui-router', 'LocalStorageModule'])
+angular.module('portfolioApp', ['ui.router'])
 
 .config(function($stateProvider, $urlRouterProvider) {
   $urlRouterProvider.otherwise('/');
@@ -9,7 +9,7 @@ angular.module('portfolioApp', ['ui-router', 'LocalStorageModule'])
     template: '<ui-view></ui-view>'
   }).state('portfolioParent.projects', {
     url: 'projects',
-    templateUrl: 'src/templates/projects.html',
+    templateUrl: './src/templates/projects.html',
     controller: 'ProjectsController as projects'
   }).state('portfolioParent.about', {
     url: 'about',
