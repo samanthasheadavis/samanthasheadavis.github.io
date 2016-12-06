@@ -7,6 +7,7 @@ ul {
     font-family: $raleway;
     font-weight: bold;
     font-size: 2em;
+    color: $charcoal;
   }
 
   li {
@@ -20,7 +21,7 @@ ul {
       display: inline-block;
       font-size: 19px;
       font-weight: 300;
-      color: black;
+      color: $charcoal;
       transition: color 0.2s ease;
       padding: 3px 0;
 
@@ -48,12 +49,12 @@ ul {
 
         &::before {
             transition: width 0.25s cubic-bezier(0.51, 0.18, 0, 0.88) 0.1s;
-            background: gray;
+            background: $cream;
         }
 
         &::after {
             transition: width 0.2s cubic-bezier(0.29, 0.18, 0.26, 0.83);
-            background: green;
+            background: $pink;
         }
     }
   }
