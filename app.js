@@ -7,6 +7,10 @@ angular.module('portfolioApp', ['ui.router'])
     url: '/',
     abstract: 'true',
     template: '<ui-view></ui-view>'
+  }).state('portfolioParent.home', {
+      url: '',
+      controller: 'HomeController as home',
+      templateUrl: 'src/templates/home.html'
   }).state('portfolioParent.projects', {
     url: 'projects',
     templateUrl: './src/templates/projects.html',
