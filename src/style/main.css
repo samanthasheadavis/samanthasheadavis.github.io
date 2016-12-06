@@ -1,3 +1,43 @@
-
+ul {
+  display: flex;
+  justify-content: flex-end; }
+  ul .title {
+    flex-grow: 2;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    font-size: 2em; }
+  ul li {
+    margin: 15px;
+    list-style: none; }
+    ul li a {
+      font-family: "Raleway", sans-serif;
+      text-decoration: none;
+      position: relative;
+      display: inline-block;
+      font-size: 19px;
+      font-weight: 300;
+      color: black;
+      transition: color 0.2s ease;
+      padding: 3px 0; }
+      ul li a:hover {
+        color: #aaa; }
+        ul li a:hover::after, ul li a:hover::before {
+          width: 100%;
+          left: 0; }
+    ul li a::after, ul li a::before {
+      content: '';
+      position: absolute;
+      top: calc(100% + 5px);
+      width: 0;
+      right: 0;
+      height: 3px; }
+    ul li a::before {
+      transition: width 0.25s cubic-bezier(0.51, 0.18, 0, 0.88) 0.1s;
+      background: gray; }
+    ul li a::after {
+      transition: width 0.2s cubic-bezier(0.29, 0.18, 0.26, 0.83);
+      background: green; }
+  ul li:nth-child(4) {
+    margin-right: 50px; }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,64 @@
+ul {
+  display: flex;
+  justify-content: flex-end;
+
+  .title {
+    flex-grow: 2;
+    font-family: $raleway;
+    font-weight: bold;
+    font-size: 2em;
+  }
+
+  li {
+    margin: 15px;
+    list-style: none;
+
+    a {
+      font-family: $raleway;
+      text-decoration: none;
+      position: relative;
+      display: inline-block;
+      font-size: 19px;
+      font-weight: 300;
+      color: black;
+      transition: color 0.2s ease;
+      padding: 3px 0;
+
+      &:hover {
+          color: #aaa;
+
+          &::after,
+          &::before {
+              width: 100%;
+              left: 0;
+          }
+      }
+    }
+
+    a {
+        &::after,
+        &::before {
+            content: '';
+            position: absolute;
+            top: calc(100% + 5px);
+            width: 0;
+            right: 0;
+            height: 3px;
+        }
+
+        &::before {
+            transition: width 0.25s cubic-bezier(0.51, 0.18, 0, 0.88) 0.1s;
+            background: gray;
+        }
+
+        &::after {
+            transition: width 0.2s cubic-bezier(0.29, 0.18, 0.26, 0.83);
+            background: green;
+        }
+    }
+  }
+
+  li:nth-child(4) {
+    margin-right: 50px;
+  }
+}
