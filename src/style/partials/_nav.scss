@@ -10,6 +10,12 @@ ul {
     color: $charcoal;
   }
 
+  .active {
+    color: $cream;
+    padding-bottom: 8px;
+    border-bottom: 3px solid $pink;
+  }
+
   li {
     margin: 15px;
     list-style: none;
@@ -26,7 +32,7 @@ ul {
       padding: 3px 0;
 
       &:hover {
-          color: #aaa;
+          color: $cream;
 
           &::after,
           &::before {

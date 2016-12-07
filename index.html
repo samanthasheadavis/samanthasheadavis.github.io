@@ -8,16 +8,16 @@
     <link rel="stylesheet" href="./src/style/main.css" />
 </head>
 
-<body>
+<body ng-controller="PortfolioController as portfolio">
     <header>
         <ul>
             <li class="title" ui-sref="portfolioParent.home">Samantha Davis</li>
             <li>
-                <a ui-sref="portfolioParent.about">About</a></li>
+                <a ui-sref="portfolioParent.about" ui-sref-active="active">About</a></li>
             <li>
-                <a ui-sref="portfolioParent.projects">Projects</a></li>
+                <a ui-sref="portfolioParent.projects" ui-sref-active="active">Projects</a></li>
             <li>
-                <a ui-sref="portfolioParent.contact">Contact</a></li>
+                <a ui-sref="portfolioParent.contact" ui-sref-active="active">Contact</a></li>
         </ul>
     </header>
     <main>
@@ -27,6 +27,7 @@
     <script src="src/js/angular.js"></script>
     <script src="src/js/angular-ui-router.min.js"></script>
     <script src="app.js"></script>
+    <script src="src/js/controllers/PortfolioController.js"></script>
     <script src="src/js/controllers/HomeController.js"></script>
     <script src="src/js/controllers/AboutController.js"></script>
     <script src="src/js/controllers/ProjectsController.js"></script>
