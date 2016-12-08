@@ -134,6 +134,83 @@ ul {
       padding: 30px;
       background: white;
       display: none; }
+      .aboutContainer .right .skills .skills-container {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        color: #1F2020; }
+        .aboutContainer .right .skills .skills-container section {
+          width: 33.33%;
+          box-sizing: border-box;
+          padding: 0 15px 15px; }
+          .aboutContainer .right .skills .skills-container section h2 {
+            margin: 0 0 15px; }
+          .aboutContainer .right .skills .skills-container section li {
+            list-style: none;
+            margin-bottom: 5px; }
+            .aboutContainer .right .skills .skills-container section li:hover {
+              transform: scale(1.2);
+              cursor: pointer; }
+            .aboutContainer .right .skills .skills-container section li:hover > span {
+              display: block; }
+            .aboutContainer .right .skills .skills-container section li span {
+              color: #B63C4B;
+              display: none; }
+          .aboutContainer .right .skills .skills-container section .beginner:before {
+            content: '';
+            margin-right: 5px;
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: rgba(182, 60, 75, 0.5); }
+          .aboutContainer .right .skills .skills-container section .intermediate:before {
+            content: '';
+            margin-right: 5px;
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #B63C4B; }
+          .aboutContainer .right .skills .skills-container section .advanced:before {
+            content: '';
+            margin-right: 5px;
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #69232b; }
+      .aboutContainer .right .skills .guide {
+        position: absolute;
+        display: flex;
+        right: 0;
+        bottom: 0; }
+        .aboutContainer .right .skills .guide p {
+          margin: 15px 20px; }
+        .aboutContainer .right .skills .guide p:nth-child(1):before {
+          content: '';
+          margin-right: 5px;
+          display: inline-block;
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          background-color: rgba(182, 60, 75, 0.5); }
+        .aboutContainer .right .skills .guide p:nth-child(2):before {
+          content: '';
+          margin-right: 5px;
+          display: inline-block;
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          background-color: #B63C4B; }
+        .aboutContainer .right .skills .guide p:nth-child(3):before {
+          content: '';
+          margin-right: 5px;
+          display: inline-block;
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          background-color: #69232b; }
     .aboutContainer .right .interests {
       width: 93%;
       position: absolute;

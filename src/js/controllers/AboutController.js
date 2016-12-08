@@ -14,14 +14,20 @@ this.showInterests = false;
       this.showAbout = true;
       this.showSkills = false;
       this.showInterests = false;
+      $('.skills').hide();
+      $('.interests').hide();
     } else if (tab === 'skills') {
       this.showSkills = true;
       this.showAbout = false;
       this.showInterests = false;
+      $('.skills').show();
+      $('.interests').hide();
     } else if (tab === 'interests') {
       this.showInterests = true;
       this.showAbout = false;
       this.showSkills = false;
+      $('.interests').show();
+      $('.skills').hide();
     }
 
   };
