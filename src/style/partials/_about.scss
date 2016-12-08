@@ -14,13 +14,15 @@
       flex-direction: column;
       align-items: center;
       width: 20%;
-      background: rgba($cream, .5);
+      border: 5px solid rgba($cream, .5);
       border-radius: 5px;
       height: 77vh;
+      background: linear-gradient(rgba($pink, .3), rgba($pink, .7));
 
       .headshot {
         width: 100%;
         border-radius: 50%;
+        box-shadow: $box-shadow;
       }
 
       .linkContainer {
@@ -62,11 +64,12 @@
       flex-direction: column;
       width: 67%;
       margin-left: 56px;
-      background: rgba($cream, .5);
+      border: 5px solid rgba($cream, .5);
       border-radius: 5px;
       height: 77vh;
       font-family: $raleway;
       padding: 30px;
+      background: linear-gradient(rgba($cream, .1), rgba($cream, .5));
 
       .title {
           font-family: $raleway;
@@ -79,10 +82,23 @@
       .statement {
         font-size: 1.1em;
         line-height: 1.25em;
+
+        span {
+          color: $pink;
+        }
+
+        a {
+          text-decoration: none;
+          font-weight: bold;
+          color: $charcoal;
+
+          &:hover {
+            color: $pink;
+          }
+        }
       }
 
       .icon-box {
-        margin-top: 15px;
         display: flex;
         justify-content: space-around;
 
@@ -90,10 +106,28 @@
           display: flex;
           flex-direction: column;
           align-items: center;
+          width: 33.33%;
+          margin-right: 20px;
+
+          p {
+            color: $pink;
+            font-weight: bold;
+          }
+
+          .detail {
+            color: $charcoal;
+            font-weight: normal;
+            font-size: 1em;
+            margin: 0;
+          }
 
           img {
-            width: 40px;
+            height: 40px;
           }
+        }
+
+        .icon:nth-child(3) {
+          margin-right: 0;
         }
       }
     }
