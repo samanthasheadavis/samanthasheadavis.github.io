@@ -20,6 +20,10 @@ ul {
     margin: 15px;
     list-style: none;
 
+    &:hover {
+      cursor: pointer;
+    }
+
     a {
       font-family: $raleway;
       text-decoration: none;

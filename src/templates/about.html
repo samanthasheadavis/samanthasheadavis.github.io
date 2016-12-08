@@ -1,3 +1,9 @@
+<ul class="tabs">
+  <li ng-class="{'active': about.showAbout}" ng-click="about.tabSwitch('about')">About Me</li>
+  <li ng-class="{'active': about.showSkills}" ng-click="about.tabSwitch('skills')">Skills</li>
+  <li ng-class="{'active': about.showInterests}" ng-click="about.tabSwitch('interests')">Interests</li>
+</ul>
+
 <div class="aboutContainer" ng-controller="AboutController as about">
   <div class="left">
     <img class="headshot" src="../../assets/headshot.jpg">
@@ -10,6 +16,10 @@
     </div>
   </div>
   <div class="right">
+    <div class="skills" ng-show="about.showSkills">
+    </div>
+    <div class="interests" ng-show="about.showInterests">
+    </div>
     <p class="title">About Me</p>
     <p class="statement">
     <span>  Junior Front-End Developer from Durham, NC with a background in marketing and SEO.</span>
