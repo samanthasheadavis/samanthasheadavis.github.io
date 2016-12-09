@@ -1,54 +1,84 @@
 .projects-container {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-
-  .project-nav {
-    display: flex;
-  }
-
-  .timeline-container {
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: $raleway;
 
-    section {
-      display: flex;
-      margin-top: 15px;
-      width: 100%;
-      justify-content: space-around;
+    .project-nav {
+        display: flex;
+    }
 
-      .left-container {
-        width: 42%;
-      }
-
-      .right-container {
-        width: 42%;
-      }
-
-      .active {
-        background: linear-gradient(white, rgba($cream, .3));
-      }
-
-      .line {
-        width: 5px;
-        background: rgba($charcoal, .5);
+    .timeline-container {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        width: 100%;
 
-        .marker {
-          width: 20px;
-          height: 20px;
-          border-radius: 50%;
-          background: $charcoal;
+        section {
+            display: flex;
+            margin-top: 15px;
+            width: 100%;
+            justify-content: space-around;
+
+            .project-img {
+                width: 500px;
+                transition: all 0.5s ease;
+
+                &:hover {
+                    transform: scale(1.5) translateX(20%);
+                }
+            }
+
+            .left-container {
+                width: 42%;
+            }
+
+            .right-container {
+                width: 42%;
+            }
+
+            .img {
+                // background: linear-gradient(white, rgba($cream, .3));
+            }
+
+            .text {
+                // background: linear-gradient(white, rgba($cream, .3));
+                .btn-container {
+                    display: flex;
+
+                    .lang-container {
+                        display: none;
+                    }
+
+                    h2 {
+                        background: rgba($pink, .5);
+                        border-radius: 5px;
+                        padding: 5px;
+
+                        img {
+                            width: 17px;
+                        }
+                    }
+                }
+            }
+
+            .line {
+                width: 5px;
+                background: black;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                .marker {
+                    img {
+                        width: 40px;
+                        background: white;
+                    }
+                }
+            }
         }
-      }
-
     }
-  }
 }
