@@ -10,9 +10,47 @@ ul {
   ul .active {
     padding-bottom: 8px;
     border-bottom: 3px solid #B63C4B; }
+  ul .nav-container {
+    display: flex; }
+    @media only screen and (max-width: 700px) {
+      ul .nav-container {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        position: absolute;
+        right: 20px;
+        background: linear-gradient(#B63C4B, #DECEBE);
+        border-radius: 5px;
+        z-index: 2; } }
+    @media only screen and (max-width: 440px) {
+      ul .nav-container {
+        top: 70px;
+        left: 50%;
+        width: 100px;
+        transform: translateX(-50%); } }
+  ul .mobile-menu {
+    display: none;
+    width: 50px;
+    height: 50px;
+    margin-top: 15px;
+    position: absolute;
+    top: 15px;
+    right: 40px; }
+    @media only screen and (max-width: 700px) {
+      ul .mobile-menu {
+        display: block;
+        z-index: 3; } }
+    @media only screen and (max-width: 440px) {
+      ul .mobile-menu {
+        top: 70px;
+        left: 50%;
+        transform: translateX(-50%); } }
   ul li {
     margin: 15px;
     list-style: none; }
+    @media only screen and (max-width: 780px) {
+      ul li {
+        margin: 10px; } }
     ul li:hover {
       cursor: pointer; }
     ul li a {
@@ -25,11 +63,9 @@ ul {
       color: #1F2020;
       transition: color 0.2s ease;
       padding: 3px 0; }
-      ul li a:hover {
-        color: #DECEBE; }
-        ul li a:hover::after, ul li a:hover::before {
-          width: 100%;
-          left: 0; }
+      ul li a:hover::after, ul li a:hover::before {
+        width: 100%;
+        left: 0; }
     ul li a::after, ul li a::before {
       content: '';
       position: absolute;
@@ -43,8 +79,14 @@ ul {
     ul li a::after {
       transition: width 0.2s cubic-bezier(0.29, 0.18, 0.26, 0.83);
       background: #B63C4B; }
-  ul li:nth-child(4) {
+  @media only screen and (max-width: 700px) {
+    ul .home {
+      margin-top: 75px; } }
+  ul li:nth-child(5) {
     margin-right: 50px; }
+    @media only screen and (max-width: 700px) {
+      ul li:nth-child(5) {
+        margin-right: 10px; } }
 
 .tabs {
   position: absolute;
@@ -268,6 +310,9 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center; }
+  @media only screen and (max-width: 1000px) {
+    .homeContainer {
+      flex-direction: column; } }
   .homeContainer p {
     position: absolute;
     top: 65px;
@@ -276,11 +321,43 @@ ul {
     font-family: "Raleway", sans-serif;
     color: rgba(182, 60, 75, 0.75);
     font-size: 1.5em; }
+    @media only screen and (max-width: 1000px) {
+      .homeContainer p {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 57%;
+        text-align: center; } }
+    @media only screen and (max-width: 700px) {
+      .homeContainer p {
+        width: 70%; } }
+    @media only screen and (max-width: 440px) {
+      .homeContainer p {
+        margin-top: 70px; } }
   .homeContainer .hero {
     width: 33%;
     border-radius: 50%;
     padding: 65px 10px;
-    background: #DECEBE; }
+    background: #DECEBE;
+    transition: all 0.5s ease; }
+    @media only screen and (max-width: 1220px) {
+      .homeContainer .hero {
+        width: 40%;
+        margin-top: 50px; } }
+    @media only screen and (max-width: 1000px) {
+      .homeContainer .hero {
+        width: 50%;
+        margin-top: 10px; } }
+    @media only screen and (max-width: 700px) {
+      .homeContainer .hero {
+        width: 70%; } }
+    @media only screen and (max-width: 560px) {
+      .homeContainer .hero {
+        width: 85%; } }
+    @media only screen and (max-width: 440px) {
+      .homeContainer .hero {
+        padding: 45px 1px;
+        width: 100%; } }
 
 .projects-container {
   width: 100%;

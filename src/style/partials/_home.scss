@@ -5,6 +5,10 @@
     justify-content: center;
     align-items: center;
 
+    @include media(desktopSmall) {
+      flex-direction: column;
+    }
+
     p {
       position: absolute;
       top: 65px;
@@ -13,6 +17,22 @@
       font-family: $raleway;
       color: rgba($pink, .75);
       font-size: 1.5em;
+
+      @include media(desktopSmall) {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 57%;
+        text-align: center;
+      }
+
+      @include media(tablet) {
+        width: 70%;
+      }
+
+      @include media(mobile) {
+        margin-top: 70px;
+      }
     }
 
     .hero {
@@ -20,5 +40,29 @@
       border-radius: 50%;
       padding: 65px 10px;
       background: $cream;
+      transition: $transition;
+
+      @include media(desktop) {
+        width: 40%;
+        margin-top: 50px;
+      }
+
+      @include media(desktopSmall) {
+        width: 50%;
+        margin-top: 10px;
+      }
+
+      @include media(tablet) {
+        width: 70%;
+      }
+
+      @include media(mobileLarge) {
+        width: 85%;
+      }
+
+      @include media(mobile) {
+        padding: 45px 1px;
+        width: 100%;
+      }
     }
 }

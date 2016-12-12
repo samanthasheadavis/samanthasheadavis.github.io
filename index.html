@@ -12,15 +12,17 @@
     <header>
         <ul>
             <li class="title" ui-sref="portfolioParent.home">Samantha Davis</li>
-            <li>
-                <a ui-sref="portfolioParent.home" ui-sref-active="active">Home</a></li>
-            <li>
-            <li>
-                <a ui-sref="portfolioParent.about" ui-sref-active="active">About</a></li>
-            <li>
-                <a ui-sref="portfolioParent.projects" ui-sref-active="active">Projects</a></li>
-            <li>
-                <a ui-sref="portfolioParent.contact" ui-sref-active="active">Contact</a></li>
+            <img class="mobile-menu" src="../../assets/menu.png" ng-click='portfolio.mobileNav()'>
+            <div class="nav-container">
+              <li class='home'>
+                  <a ui-sref="portfolioParent.home" ui-sref-active="active">Home</a></li>
+              <li>
+                  <a ui-sref="portfolioParent.about" ui-sref-active="active">About</a></li>
+              <li>
+                  <a ui-sref="portfolioParent.projects" ui-sref-active="active">Projects</a></li>
+              <li>
+                  <a ui-sref="portfolioParent.contact" ui-sref-active="active">Contact</a></li>
+            </div>
         </ul>
     </header>
     <main>
