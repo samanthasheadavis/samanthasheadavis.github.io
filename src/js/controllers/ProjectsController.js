@@ -4,7 +4,6 @@ angular.module('portfolioApp').controller('ProjectsController', function($state,
   this.getProjects = function() {
     RequestService.getProjects(function(data) {
       $scope.projects = data.projects;
-      console.log($scope.projects);
       $scope.$apply();
     });
   };
