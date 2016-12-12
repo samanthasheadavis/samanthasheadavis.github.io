@@ -334,10 +334,25 @@ ul {
         display: flex; }
         .projects-container .timeline-container section .text .btn-container .lang-container {
           display: none; }
+          .projects-container .timeline-container section .text .btn-container .lang-container ul {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            width: 20px; }
+            .projects-container .timeline-container section .text .btn-container .lang-container ul li {
+              margin: 0;
+              list-style: disc; }
+        .projects-container .timeline-container section .text .btn-container a {
+          text-decoration: none;
+          color: #1F2020; }
         .projects-container .timeline-container section .text .btn-container h2 {
           background: rgba(182, 60, 75, 0.5);
           border-radius: 5px;
-          padding: 5px; }
+          padding: 5px;
+          margin-right: 10px; }
+          .projects-container .timeline-container section .text .btn-container h2:hover {
+            cursor: pointer;
+            background: #B63C4B; }
           .projects-container .timeline-container section .text .btn-container h2 img {
             width: 17px; }
 

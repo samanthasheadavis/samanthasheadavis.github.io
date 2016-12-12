@@ -9,6 +9,11 @@ angular.module('portfolioApp').controller('ProjectsController', function($state,
     });
   };
 
+  $scope.dropdown = function(project) {
+    var languages = project.id;
+    $("." + languages).slideToggle();
+  };
+
   this.getProjects();
 
 });

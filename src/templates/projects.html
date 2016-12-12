@@ -1,4 +1,4 @@
-<div class="projects-container">
+<div class="projects-container" ng-controller="ProjectsController as projects">
     <div class="project-nav">
 
     </div>
@@ -17,10 +17,16 @@
                 <h1>{{project.title}}</h1>
                 <p>{{project.description}}</p>
                 <div class="btn-container">
-                    <h2>Languages <img src="../../assets/down.png" alt="down by To Uyen from the Noun Project" /></h2>
-                    <ul class="lang-container" ng-repeat = "language in project.languages">
+                  <div class="langBtn">
+                    <h2 ng-click="dropdown(project)">Languages <img src="../../assets/down.png" alt="down by To Uyen from the Noun Project"/></h2>
+                    <div class="lang-container {{project.id}}" ng-repeat = "language in project.languages">
+                      <ul>
                         <li>{{language}}</li>
-                    </ul>
+                      </ul>
+                    </div>
+                  </div>
+                <a href={{project.github_repo}}><h2>GitHub</h2></a>
+                <a href={{project.website}}><h2>Website</h2></a>
                 </div>
             </div>
     </div>
