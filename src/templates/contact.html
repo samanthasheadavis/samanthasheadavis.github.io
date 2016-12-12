@@ -4,26 +4,26 @@
       <div class="name-container">
         <div class="input-block">
           <label class="first-name" for="first_name">First Name</label>
-          <input type="text" name="first_name" ng-click="contact.targetItem('first-name')">
+          <input type="text" name="first_name" ng-click="contact.targetItem('first-name')" ng-focus="contact.targetItem('first-name')">
         </div>
         <div class="input-block">
           <label class="last-name" for="last_name">Last Name</label>
-          <input type="text" name="last_name" ng-click="contact.targetItem('last-name')">
+          <input type="text" name="last_name" ng-click="contact.targetItem('last-name')" ng-focus="contact.targetItem('last-name')">
         </div>
       </div>
       <div class="input-block">
         <label class="email" for="_replyto">Email</label>
-        <input type="email" name="_replyto" ng-click="contact.targetItem('email')">
+        <input type="email" name="_replyto" ng-click="contact.targetItem('email')" ng-focus="contact.targetItem('email')">
       </div>
 
       <div class="input-block">
         <label class="subject" for="subject">Message Subject</label>
-        <input type="text" name="subject" ng-click="contact.targetItem('subject')">
+        <input type="text" name="subject" ng-click="contact.targetItem('subject')" ng-focus="contact.targetItem('subject')">
       </div>
 
       <div class="input-block">
         <label class="message" for="message">Message</label>
-        <textarea name="message" rows="8" cols="40" ng-click="contact.targetItem('message')"></textarea>
+        <textarea name="message" rows="8" cols="40" ng-click="contact.targetItem('message')" ng-focus="contact.targetItem('message')"></textarea>
       </div>
 
       <div class="input-block">
