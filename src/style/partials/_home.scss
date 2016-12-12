@@ -17,6 +17,7 @@
       font-family: $raleway;
       color: rgba($pink, .75);
       font-size: 1.5em;
+      transition: $transition;
 
       @include media(desktopSmall) {
         position: relative;

@@ -35,7 +35,8 @@ ul {
     margin-top: 15px;
     position: absolute;
     top: 15px;
-    right: 40px; }
+    right: 40px;
+    transition: all 0.5s ease; }
     @media only screen and (max-width: 700px) {
       ul .mobile-menu {
         display: block;
@@ -320,7 +321,8 @@ ul {
     width: 27%;
     font-family: "Raleway", sans-serif;
     color: rgba(182, 60, 75, 0.75);
-    font-size: 1.5em; }
+    font-size: 1.5em;
+    transition: all 0.5s ease; }
     @media only screen and (max-width: 1000px) {
       .homeContainer p {
         position: relative;
