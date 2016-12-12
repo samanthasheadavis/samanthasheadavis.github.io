@@ -1,0 +1,72 @@
+.contact-container {
+    width: 100%;
+    height: 100%;
+
+    h1 {
+      text-align: center;
+      font-family: $raleway;
+    }
+
+    form {
+        margin: 10px auto;
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        box-sizing: border-box;
+        background: linear-gradient(rgba($pink, .3), rgba($pink, .7));
+        padding: 20px;
+        border-radius: 5px;
+
+        .name-container {
+          width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .input-block {
+            position: relative;
+            width: 100%;
+
+            label {
+                position: absolute;
+                top: 37px;
+                left: 20px;
+                font-family: $raleway;
+                color: $charcoal;
+            }
+
+            input {
+                margin-top: 20px;
+                width: 100%;
+                padding: 5px 5px 5px 20px;
+                box-sizing: border-box;
+                height: 50px;
+                outline: none;
+                border: none;
+            }
+
+            .send-btn {
+              background: $pink;
+              font-family: $raleway;
+              color: white;
+              font-weight: bold;
+              font-size: 20px;
+              text-transform: uppercase;
+              letter-spacing: 1px;
+            }
+
+            textarea {
+                width: 100%;
+                margin-top: 20px;
+                outline: none;
+                resize: none;
+                border: none;
+                box-sizing: border-box;
+                padding: 20px 5px 5px 20px;
+            }
+        }
+    }
+}
