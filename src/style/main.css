@@ -382,12 +382,18 @@ ul {
       width: 100%; }
       .contact-container form .input-block label {
         position: absolute;
-        top: 37px;
+        top: 42px;
         left: 20px;
         font-family: "Raleway", sans-serif;
-        color: #1F2020; }
+        color: #1F2020;
+        width: 100%;
+        transition: all .5s ease;
+        z-index: 1; }
       .contact-container form .input-block input {
-        margin-top: 20px;
+        position: relative;
+        z-index: 2;
+        background: rgba(255, 255, 255, 0.2);
+        margin-top: 25px;
         width: 100%;
         padding: 5px 5px 5px 20px;
         box-sizing: border-box;
@@ -399,10 +405,13 @@ ul {
         font-family: "Raleway", sans-serif;
         color: white;
         font-weight: bold;
-        font-size: 20px;
+        font-size: 25px;
         text-transform: uppercase;
         letter-spacing: 1px; }
       .contact-container form .input-block textarea {
+        position: relative;
+        z-index: 2;
+        background: rgba(255, 255, 255, 0.2);
         width: 100%;
         margin-top: 20px;
         outline: none;

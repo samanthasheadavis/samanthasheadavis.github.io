@@ -1,3 +1,9 @@
 angular.module('portfolioApp').controller('ContactController', function($state) {
-  this.message = "in ContactController";
+    this.targetItem = function(element) {
+
+        $('.' + element).css({
+            'top': '5px',
+            'left': '0px'
+        });
+    };
 });

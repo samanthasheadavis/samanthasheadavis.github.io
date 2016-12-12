@@ -3,27 +3,27 @@
     <form action="https://formspree.io/samantha.shea.davis@gmail.com" method="POST">
       <div class="name-container">
         <div class="input-block">
-          <label for="first_name">First Name</label>
-          <input type="text" name="first_name">
+          <label class="first-name" for="first_name">First Name</label>
+          <input type="text" name="first_name" ng-click="contact.targetItem('first-name')">
         </div>
         <div class="input-block">
-          <label for="last_name">Last Name</label>
-          <input type="text" name="last_name">
+          <label class="last-name" for="last_name">Last Name</label>
+          <input type="text" name="last_name" ng-click="contact.targetItem('last-name')">
         </div>
       </div>
       <div class="input-block">
-        <label for="_replyto">Email</label>
-        <input type="email" name="_replyto">
+        <label class="email" for="_replyto">Email</label>
+        <input type="email" name="_replyto" ng-click="contact.targetItem('email')">
       </div>
 
       <div class="input-block">
-        <label for="subject">Message Subject</label>
-        <input type="text" name="subject">
+        <label class="subject" for="subject">Message Subject</label>
+        <input type="text" name="subject" ng-click="contact.targetItem('subject')">
       </div>
 
       <div class="input-block">
-        <label for="message">Message</label>
-        <textarea name="message" rows="8" cols="40"></textarea>
+        <label class="message" for="message">Message</label>
+        <textarea name="message" rows="8" cols="40" ng-click="contact.targetItem('message')"></textarea>
       </div>
 
       <div class="input-block">
