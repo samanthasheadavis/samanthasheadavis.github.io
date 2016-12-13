@@ -669,6 +669,25 @@ ul {
     background: linear-gradient(#B63C4B, #DECEBE);
     padding: 20px;
     border-radius: 5px; }
+    @media only screen and (max-width: 1220px) {
+      .contact-container form {
+        width: 50%; } }
+    @media only screen and (max-width: 1000px) {
+      .contact-container form {
+        width: 60%; } }
+    @media only screen and (max-width: 780px) {
+      .contact-container form {
+        width: 70%;
+        margin-top: 30px; } }
+    @media only screen and (max-width: 700px) {
+      .contact-container form {
+        width: 80%; } }
+    @media only screen and (max-width: 560px) {
+      .contact-container form {
+        margin-top: 90px; } }
+    @media only screen and (max-width: 440px) {
+      .contact-container form {
+        width: 95%; } }
     .contact-container form h1 {
       text-align: center;
       font-family: "Raleway", sans-serif;
@@ -677,6 +696,9 @@ ul {
       width: 100%;
       display: flex;
       justify-content: space-between; }
+      @media only screen and (max-width: 440px) {
+        .contact-container form .name-container {
+          flex-direction: column; } }
     .contact-container form .input-block {
       position: relative;
       width: 100%; }
