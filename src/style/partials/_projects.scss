@@ -7,6 +7,7 @@
     align-items: center;
     position: relative;
     font-family: $raleway;
+    background: linear-gradient(to right, $pink, $cream);
 
     .project-nav {
         display: flex;
@@ -21,7 +22,7 @@
         justify-content: center;
         align-items: center;
         height: 100%;
-        z-index: -1;
+        z-index: 1;
     }
 
     .timeline-container {
@@ -29,7 +30,8 @@
         flex-direction: column;
         width: 90%;
         padding: 15px;
-        box-shadow: 0px 0px 15px 2px rgba($pink, .5);
+        // background: linear-gradient(to right, $pink, $cream);
+        // box-shadow: 0px 0px 15px 2px rgba($pink, .5);
 
         section {
             display: flex;
@@ -40,8 +42,10 @@
             .project-img {
                 width: 500px;
                 transition: all 0.5s ease;
-                box-shadow: $box-shadow;
+                box-shadow: $black-shadow;
                 margin: 0 20px;
+                position: relative;
+                z-index: 4;
 
                 &:hover {
                     transform: scale(1.5) translateX(20%);
@@ -58,6 +62,8 @@
                     background: white;
                     border-radius: 50%;
                     margin-left: 40px;
+                    position: relative;
+                    z-index: 2;
                 }
             }
 
@@ -92,14 +98,17 @@
                     }
 
                     h2 {
-                        background: rgba($pink, .5);
+                        background: $pink;
                         border-radius: 5px;
+                        color: black;
                         padding: 5px;
                         margin-right: 10px;
+                        box-shadow: $btn-shadow;
+
 
                         &:hover {
                           cursor: pointer;
-                          background: $pink;
+                          box-shadow: $btn-hover-shadow;
                         }
 
                         img {

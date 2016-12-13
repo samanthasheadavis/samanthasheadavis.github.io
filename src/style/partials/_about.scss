@@ -78,7 +78,7 @@
         width: 20%;
         border-radius: 5px;
         height: 77vh;
-        background: linear-gradient( rgba($pink, .3), white);
+        background: linear-gradient($pink, $cream, white);
 
         @include media(desktop) {
           position: absolute;
@@ -113,7 +113,7 @@
         .headshot {
             width: 100%;
             border-radius: 50%;
-            box-shadow: $box-shadow;
+            box-shadow: $black-shadow;
             margin-bottom: 50px;
 
             @include media(tablet) {
