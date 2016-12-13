@@ -428,17 +428,19 @@ ul {
   height: 100%;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  background: linear-gradient(to right, #B63C4B, #DECEBE);
+  padding: 20px; }
   @media only screen and (max-width: 1000px) {
     .homeContainer {
       flex-direction: column; } }
   .homeContainer p {
     position: absolute;
-    top: 65px;
+    top: 110px;
     left: 56px;
     width: 27%;
     font-family: "Raleway", sans-serif;
-    color: rgba(182, 60, 75, 0.75);
+    color: white;
     font-size: 1.5em;
     transition: all 0.5s ease; }
     @media only screen and (max-width: 1000px) {
