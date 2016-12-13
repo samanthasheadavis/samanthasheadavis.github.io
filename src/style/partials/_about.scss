@@ -4,11 +4,42 @@
     left: 360px;
     font-family: $raleway;
 
+    @include media(desktop) {
+      left: 300px;
+    }
+
+    @include media(desktopSmall) {
+      left: 50px;
+      margin-top: 66px;
+    }
+
+    @include media(tabletLarge) {
+      margin-top: 56px;
+    }
+
+    @include media(tablet) {
+      margin-top: 0;
+      top: 415px;
+    }
+
+    @include media(mobileLarge) {
+      top: 570px;
+    }
+
+    @include media(mobile) {
+      top: 581px;
+      left: -7px
+    }
+
     li {
         border: 5px solid $cream;
         padding: 15px;
         margin: 0;
         border-radius: 5px 5px 0 0;
+
+        @include media(mobile) {
+          padding: 10px;
+        }
 
         &:hover {
             background: $cream;
@@ -32,6 +63,10 @@
     justify-content: flex-start;
     align-items: center;
 
+    @include media(tablet) {
+      flex-direction: column;
+    }
+
     .left {
         box-sizing: border-box;
         margin-left: 56px;
@@ -45,10 +80,45 @@
         height: 77vh;
         background: linear-gradient( rgba($pink, .3), white);
 
+        @include media(desktop) {
+          position: absolute;
+          right: 40px;
+          top: 100px;
+          justify-content: flex-start;
+        }
+
+        @include media(desktopSmall) {
+          top: 138px;
+        }
+
+        @include media(tablet) {
+          position: static;
+          flex-direction: row;
+          margin: 15px 0;
+          height: 300px;
+          width: 85%;
+          justify-content: space-around;
+        }
+
+        @include media(mobileLarge) {
+          flex-direction: column;
+          height: 400px;
+          margin-top: 70px;
+        }
+
+        @include media(mobile) {
+          width: 95%;
+        }
+
         .headshot {
             width: 100%;
             border-radius: 50%;
             box-shadow: $box-shadow;
+            margin-bottom: 50px;
+
+            @include media(tablet) {
+              width: 50%;
+            }
         }
 
         .linkContainer {
@@ -64,6 +134,10 @@
                 background: rgba($pink, .5);
                 padding: 10px;
                 border-radius: 5px;
+
+                @include media(desktopSmall) {
+                  text-align: center;
+                }
 
                 &:hover {
                   background: $pink;
@@ -99,7 +173,25 @@
         height: 77vh;
         font-family: $raleway;
         padding: 30px;
-        background: linear-gradient(white, rgba($cream, .3));
+
+        @include media(desktop) {
+          height: auto;
+        }
+
+        @include media(desktopSmall) {
+          margin-top: 50px;
+          width: 65%;
+        }
+
+        @include media(tablet) {
+          margin-top: 50px;
+          margin-left: 0;
+          width: 85%;
+        }
+
+        @include media(mobile) {
+          width: 95%;
+        }
 
         .skills {
             width: 93%;
@@ -113,6 +205,23 @@
             background: white;
             display: none;
 
+            @include media(desktop) {
+              width:89%;
+            }
+
+            @include media(desktopSmall) {
+              width: 86%;
+              height: 90%;
+            }
+
+            @include media(tabletLarge) {
+              height: 93%;
+            }
+
+            @include media(mobileLarge) {
+              width: 81%;
+            }
+
             .skills-container {
                 display: flex;
                 justify-content: flex-start;
@@ -123,6 +232,14 @@
                     width: 33.33%;
                     box-sizing: border-box;
                     padding: 0 15px 15px;
+
+                    @include media(desktopSmall) {
+                      width: 50%;
+                    }
+
+                    @include media(mobileLarge) {
+                      width: 100%;
+                    }
 
                     h2 {
                         margin: 0 0 15px;
@@ -173,6 +290,11 @@
               right: 0;
               bottom: 0;
 
+              @include media(mobile) {
+                flex-direction: column;
+                left: 25px;
+              }
+
               p {
                 margin: 15px 20px;;
               }
@@ -208,6 +330,23 @@
             padding: 30px;
             background: white;
             display: none;
+
+            @include media(desktop) {
+              width:89%;
+            }
+
+            @include media(desktopSmall) {
+              width: 86%;
+              height: 90%;
+            }
+
+            @include media(tabletLarge) {
+              height: 93%;
+            }
+
+            @include media(mobileLarge) {
+              width: 81%;
+            }
         }
 
         .title {
@@ -241,12 +380,20 @@
             display: flex;
             justify-content: space-around;
 
+            @include media(desktopSmall) {
+              flex-wrap: wrap;
+            }
+
             .icon {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 width: 33.33%;
                 margin-right: 20px;
+
+                @include media(desktopSmall) {
+                  width: 100%;
+                }
 
                 p {
                     color: $pink;
@@ -258,6 +405,10 @@
                     font-weight: normal;
                     font-size: 1em;
                     margin: 0;
+
+                    @include media(desktopSmall) {
+                      margin-bottom: 20px;
+                    }
                 }
 
                 img {
