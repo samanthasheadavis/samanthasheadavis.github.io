@@ -634,16 +634,17 @@ ul {
         .projects-container .timeline-container section .text .btn-container h2 {
           background: #B63C4B;
           border-radius: 5px;
-          color: black;
-          padding: 5px;
+          color: white;
+          padding: 10px;
+          font-size: 1.25em;
+          letter-spacing: 2px;
           margin-right: 10px;
           box-shadow: 0px 2px 0 #a33643, 0px 2px 6px #ae3948; }
           @media only screen and (max-width: 1000px) {
             .projects-container .timeline-container section .text .btn-container h2 {
               margin: 5px;
               width: 160px;
-              text-align: center;
-              font-size: 1.25em; } }
+              text-align: center; } }
           @media only screen and (max-width: 700px) {
             .projects-container .timeline-container section .text .btn-container h2 {
               width: auto; } }

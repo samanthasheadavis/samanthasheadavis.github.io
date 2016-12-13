@@ -209,8 +209,10 @@
                     h2 {
                         background: $pink;
                         border-radius: 5px;
-                        color: black;
-                        padding: 5px;
+                        color: white;
+                        padding: 10px;
+                        font-size: 1.25em;
+                        letter-spacing: 2px;
                         margin-right: 10px;
                         box-shadow: $btn-shadow;
 
@@ -218,7 +220,6 @@
                           margin: 5px;
                           width: 160px;
                           text-align: center;
-                          font-size: 1.25em;
                         }
 
                         @include media(tablet) {
