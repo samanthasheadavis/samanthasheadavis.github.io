@@ -9,6 +9,14 @@
     font-family: $raleway;
     background: linear-gradient(to right, $pink, $cream);
 
+    @include media(tablet) {
+      margin-top: 35px;
+    }
+
+    @include media(mobileLarge) {
+      margin-top: 90px;
+    }
+
     .project-nav {
         display: flex;
     }
@@ -23,6 +31,22 @@
         align-items: center;
         height: 100%;
         z-index: 1;
+
+        @include media(desktop) {
+          left: 51%;
+        }
+
+        @include media(desktopSmall) {
+          left: 57%;
+        }
+
+        @include media(tablet) {
+          left: 5%;
+        }
+
+        @include media(mobile) {
+          display: none;
+        }
     }
 
     .timeline-container {
@@ -30,8 +54,6 @@
         flex-direction: column;
         width: 90%;
         padding: 15px;
-        // background: linear-gradient(to right, $pink, $cream);
-        // box-shadow: 0px 0px 15px 2px rgba($pink, .5);
 
         section {
             display: flex;
@@ -39,21 +61,56 @@
             width: 100%;
             justify-content: space-around;
 
+            @include media(tablet) {
+              flex-direction: column;
+            }
+
             .project-img {
                 width: 500px;
-                transition: all 0.5s ease;
+                transition: $transition;
                 box-shadow: $black-shadow;
                 margin: 0 20px;
                 position: relative;
                 z-index: 4;
 
+                @include media(desktop) {
+                  margin: 0;
+                  width: 100%;
+                }
+
+                @include media(tablet) {
+                  margin-left: 30px;
+                  width: 95%;
+                }
+
+                @include media(mobile) {
+                  margin-left: 0;
+                  width: 100%;
+                }
+
                 &:hover {
                     transform: scale(1.5) translateX(20%);
+
+                    @include media(desktop) {
+                      transform: scale(2) translateX(20%);
+                    }
+
+                    @include media(tablet) {
+                      transform: scale(1.15);
+                    }
                 }
             }
 
             .left-container {
                 width: 42%;
+
+                @include media(desktop) {
+                  width: 50%;
+                }
+
+                @include media(tablet) {
+                  width: 100%;
+                }
             }
 
             .marker {
@@ -64,17 +121,69 @@
                     margin-left: 40px;
                     position: relative;
                     z-index: 2;
+
+                    @include media(tablet) {
+                      margin-bottom: -47px;
+                      margin-left: -18px;
+                    }
+
+                    @include media(mobile) {
+                      display: none;
+                    }
                 }
             }
 
             .right-container {
                 width: 42%;
                 margin-left: 40px;
+
+                @include media(desktopSmall) {
+                  width: 33.33%;
+                }
+
+                @include media(tablet) {
+                  width: 95%;
+                }
+
+                @include media(mobile) {
+                  margin-left: 0;
+                  width: 100%;
+                }
+
+                h1 {
+                  @include media(mobile) {
+                    text-align: center;
+                  }
+                }
+
+                p {
+                  @include media(mobile) {
+                    text-align: center;
+                  }
+                }
             }
 
             .text {
                 .btn-container {
                   display: flex;
+
+                  @include media(desktop) {
+                    width: 400px;
+                  }
+
+                  @include media(desktopSmall) {
+                    flex-direction: column-reverse;
+                  }
+
+                  @include media(tablet) {
+                    flex-direction: row;
+                  }
+
+                  @include media(mobile) {
+                    flex-direction: column-reverse;
+                    align-items: center;
+                    width: 90%;
+                  }
 
                     .lang-container {
                         display: none;
@@ -105,6 +214,20 @@
                         margin-right: 10px;
                         box-shadow: $btn-shadow;
 
+                        @include media(desktopSmall) {
+                          margin: 5px;
+                          width: 160px;
+                          text-align: center;
+                          font-size: 1.25em;
+                        }
+
+                        @include media(tablet) {
+                          width: auto;
+                        }
+
+                        @include media(mobile) {
+                          width: 100%;
+                        }
 
                         &:hover {
                           cursor: pointer;

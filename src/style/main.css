@@ -21,7 +21,7 @@ ul {
         right: 20px;
         background: linear-gradient(#B63C4B, #DECEBE);
         border-radius: 5px;
-        z-index: 2; } }
+        z-index: 5; } }
     @media only screen and (max-width: 440px) {
       ul .nav-container {
         top: 70px;
@@ -40,7 +40,7 @@ ul {
     @media only screen and (max-width: 700px) {
       ul .mobile-menu {
         display: block;
-        z-index: 3; } }
+        z-index: 6; } }
     @media only screen and (max-width: 440px) {
       ul .mobile-menu {
         top: 70px;
@@ -489,6 +489,12 @@ ul {
   position: relative;
   font-family: "Raleway", sans-serif;
   background: linear-gradient(to right, #B63C4B, #DECEBE); }
+  @media only screen and (max-width: 700px) {
+    .projects-container {
+      margin-top: 35px; } }
+  @media only screen and (max-width: 560px) {
+    .projects-container {
+      margin-top: 90px; } }
   .projects-container .project-nav {
     display: flex; }
   .projects-container .line {
@@ -501,6 +507,18 @@ ul {
     align-items: center;
     height: 100%;
     z-index: 1; }
+    @media only screen and (max-width: 1220px) {
+      .projects-container .line {
+        left: 51%; } }
+    @media only screen and (max-width: 1000px) {
+      .projects-container .line {
+        left: 57%; } }
+    @media only screen and (max-width: 700px) {
+      .projects-container .line {
+        left: 5%; } }
+    @media only screen and (max-width: 440px) {
+      .projects-container .line {
+        display: none; } }
   .projects-container .timeline-container {
     display: flex;
     flex-direction: column;
@@ -511,6 +529,9 @@ ul {
       padding: 30px 0;
       width: 100%;
       justify-content: space-around; }
+      @media only screen and (max-width: 700px) {
+        .projects-container .timeline-container section {
+          flex-direction: column; } }
       .projects-container .timeline-container section .project-img {
         width: 500px;
         transition: all 0.5s ease;
@@ -518,10 +539,34 @@ ul {
         margin: 0 20px;
         position: relative;
         z-index: 4; }
+        @media only screen and (max-width: 1220px) {
+          .projects-container .timeline-container section .project-img {
+            margin: 0;
+            width: 100%; } }
+        @media only screen and (max-width: 700px) {
+          .projects-container .timeline-container section .project-img {
+            margin-left: 30px;
+            width: 95%; } }
+        @media only screen and (max-width: 440px) {
+          .projects-container .timeline-container section .project-img {
+            margin-left: 0;
+            width: 100%; } }
         .projects-container .timeline-container section .project-img:hover {
           transform: scale(1.5) translateX(20%); }
+          @media only screen and (max-width: 1220px) {
+            .projects-container .timeline-container section .project-img:hover {
+              transform: scale(2) translateX(20%); } }
+          @media only screen and (max-width: 700px) {
+            .projects-container .timeline-container section .project-img:hover {
+              transform: scale(1.15); } }
       .projects-container .timeline-container section .left-container {
         width: 42%; }
+        @media only screen and (max-width: 1220px) {
+          .projects-container .timeline-container section .left-container {
+            width: 50%; } }
+        @media only screen and (max-width: 700px) {
+          .projects-container .timeline-container section .left-container {
+            width: 100%; } }
       .projects-container .timeline-container section .marker img {
         width: 40px;
         background: white;
@@ -529,11 +574,48 @@ ul {
         margin-left: 40px;
         position: relative;
         z-index: 2; }
+        @media only screen and (max-width: 700px) {
+          .projects-container .timeline-container section .marker img {
+            margin-bottom: -47px;
+            margin-left: -18px; } }
+        @media only screen and (max-width: 440px) {
+          .projects-container .timeline-container section .marker img {
+            display: none; } }
       .projects-container .timeline-container section .right-container {
         width: 42%;
         margin-left: 40px; }
+        @media only screen and (max-width: 1000px) {
+          .projects-container .timeline-container section .right-container {
+            width: 33.33%; } }
+        @media only screen and (max-width: 700px) {
+          .projects-container .timeline-container section .right-container {
+            width: 95%; } }
+        @media only screen and (max-width: 440px) {
+          .projects-container .timeline-container section .right-container {
+            margin-left: 0;
+            width: 100%; } }
+        @media only screen and (max-width: 440px) {
+          .projects-container .timeline-container section .right-container h1 {
+            text-align: center; } }
+        @media only screen and (max-width: 440px) {
+          .projects-container .timeline-container section .right-container p {
+            text-align: center; } }
       .projects-container .timeline-container section .text .btn-container {
         display: flex; }
+        @media only screen and (max-width: 1220px) {
+          .projects-container .timeline-container section .text .btn-container {
+            width: 400px; } }
+        @media only screen and (max-width: 1000px) {
+          .projects-container .timeline-container section .text .btn-container {
+            flex-direction: column-reverse; } }
+        @media only screen and (max-width: 700px) {
+          .projects-container .timeline-container section .text .btn-container {
+            flex-direction: row; } }
+        @media only screen and (max-width: 440px) {
+          .projects-container .timeline-container section .text .btn-container {
+            flex-direction: column-reverse;
+            align-items: center;
+            width: 90%; } }
         .projects-container .timeline-container section .text .btn-container .lang-container {
           display: none; }
           .projects-container .timeline-container section .text .btn-container .lang-container ul {
@@ -554,6 +636,18 @@ ul {
           padding: 5px;
           margin-right: 10px;
           box-shadow: 0px 2px 0 #a33643, 0px 2px 6px #ae3948; }
+          @media only screen and (max-width: 1000px) {
+            .projects-container .timeline-container section .text .btn-container h2 {
+              margin: 5px;
+              width: 160px;
+              text-align: center;
+              font-size: 1.25em; } }
+          @media only screen and (max-width: 700px) {
+            .projects-container .timeline-container section .text .btn-container h2 {
+              width: auto; } }
+          @media only screen and (max-width: 440px) {
+            .projects-container .timeline-container section .text .btn-container h2 {
+              width: 100%; } }
           .projects-container .timeline-container section .text .btn-container h2:hover {
             cursor: pointer;
             box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.75); }

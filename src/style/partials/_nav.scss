@@ -27,7 +27,7 @@ ul {
       right: 20px;
       background: linear-gradient($pink, $cream);
       border-radius: 5px;
-      z-index: 2;
+      z-index: 5;
     }
 
     @include media(mobile) {
@@ -50,7 +50,7 @@ ul {
 
     @include media(tablet) {
       display: block;
-      z-index: 3;
+      z-index: 6;
     }
 
     @include media(mobile) {
