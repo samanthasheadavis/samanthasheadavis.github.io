@@ -31,7 +31,7 @@ ul {
     }
 
     @include media(mobile) {
-      top: 70px;
+      top: 88px;
       left: 50%;
       width: 100px;
       transform: translateX(-50%);
@@ -54,7 +54,7 @@ ul {
     }
 
     @include media(mobile) {
-      top: 70px;
+      top: 88px;
       left: 50%;
       transform: translateX(-50%);
     }

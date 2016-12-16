@@ -24,7 +24,7 @@ ul {
         z-index: 5; } }
     @media only screen and (max-width: 440px) {
       ul .nav-container {
-        top: 70px;
+        top: 88px;
         left: 50%;
         width: 100px;
         transform: translateX(-50%); } }
@@ -43,7 +43,7 @@ ul {
         z-index: 6; } }
     @media only screen and (max-width: 440px) {
       ul .mobile-menu {
-        top: 70px;
+        top: 88px;
         left: 50%;
         transform: translateX(-50%); } }
   ul li {
@@ -433,7 +433,8 @@ ul {
   padding: 20px; }
   @media only screen and (max-width: 1000px) {
     .homeContainer {
-      flex-direction: column; } }
+      flex-direction: column;
+      padding: 0; } }
   .homeContainer p {
     position: absolute;
     top: 110px;
@@ -455,7 +456,7 @@ ul {
         width: 70%; } }
     @media only screen and (max-width: 440px) {
       .homeContainer p {
-        margin-top: 70px; } }
+        margin-top: 75px; } }
   .homeContainer .hero {
     width: 33%;
     border-radius: 50%;
