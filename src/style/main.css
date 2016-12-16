@@ -116,15 +116,16 @@ ul {
       top: 581px;
       left: -7px; } }
   .tabs li {
-    border: 5px solid #DECEBE;
+    border: 5px solid rgba(222, 206, 190, 0.5);
     padding: 15px;
     margin: 0;
+    border-bottom: none;
     border-radius: 5px 5px 0 0; }
     @media only screen and (max-width: 440px) {
       .tabs li {
         padding: 10px; } }
     .tabs li:hover {
-      background: #DECEBE;
+      background: rgba(222, 206, 190, 0.5);
       transform: scale(1.1) translateY(-3px); }
   .tabs .active {
     background: white;
@@ -175,7 +176,7 @@ ul {
       .aboutContainer .left {
         flex-direction: column;
         height: 400px;
-        margin-top: 70px; } }
+        margin-top: 80px; } }
     @media only screen and (max-width: 440px) {
       .aboutContainer .left {
         width: 95%; } }

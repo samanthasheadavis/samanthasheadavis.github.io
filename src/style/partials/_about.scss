@@ -32,9 +32,10 @@
     }
 
     li {
-        border: 5px solid $cream;
+        border: 5px solid rgba($cream, .5);
         padding: 15px;
         margin: 0;
+        border-bottom: none;
         border-radius: 5px 5px 0 0;
 
         @include media(mobile) {
@@ -42,7 +43,7 @@
         }
 
         &:hover {
-            background: $cream;
+            background: rgba($cream, .5);
             transform: scale(1.1) translateY(-3px);
         }
     }
@@ -103,7 +104,7 @@
         @include media(mobileLarge) {
           flex-direction: column;
           height: 400px;
-          margin-top: 70px;
+          margin-top: 80px;
         }
 
         @include media(mobile) {
