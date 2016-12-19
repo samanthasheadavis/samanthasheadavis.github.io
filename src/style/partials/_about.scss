@@ -23,12 +23,12 @@
     }
 
     @include media(mobileLarge) {
-      top: 570px;
+      top: 580px;
     }
 
     @include media(mobile) {
-      top: 581px;
-      left: -7px
+      top: 591px;
+      left: 70px
     }
 
     li {
