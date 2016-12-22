@@ -33,7 +33,7 @@
         z-index: 1;
 
         @include media(desktop) {
-          left: 51%;
+          left: 53%;
         }
 
         @include media(desktopSmall) {
@@ -91,10 +91,6 @@
                 &:hover {
                     transform: scale(1.5) translateX(20%);
 
-                    @include media(desktop) {
-                      transform: scale(2) translateX(20%);
-                    }
-
                     @include media(tablet) {
                       transform: scale(1.15);
                     }
@@ -116,11 +112,15 @@
             .marker {
                 img {
                     width: 40px;
-                    background: white;
+                    background: #CB8786;
                     border-radius: 50%;
-                    margin-left: 40px;
+                    margin-left: 3vw;
                     position: relative;
                     z-index: 2;
+
+                    @include media(desktop) {
+                      // margin-left:
+                    }
 
                     @include media(tablet) {
                       margin-bottom: -47px;
