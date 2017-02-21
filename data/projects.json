@@ -2,6 +2,28 @@
   "projects": [
     {
       "id": "1",
+      "title": "Limerick Generator",
+      "date": "January 22, 2017",
+      "description": "A limerick generator built with AngularJS",
+      "languages": ["AngularJS", "JavaScript", "HTML5", "Sass"],
+      "github_repo": "https://github.com/samanthasheadavis/limerickGenerator",
+      "website": "https://samanthasheadavis.github.io/limerickGenerator/",
+      "img_url": "../../assets/limerickGenerator.png",
+      "img_alt": "Limerick Generator Webpage Snapshot"
+    },
+    {
+      "id": "2",
+      "title": "ES6 Blackjack",
+      "date": "January 17, 2017",
+      "description": "A simple blackjack game built with ES6",
+      "languages": ["JavaScript", "HTML5"],
+      "github_repo": "https://github.com/samanthasheadavis/es6BlackJack",
+      "website": "https://samanthasheadavis.github.io/es6BlackJack/",
+      "img_url": "../../assets/ES6Blackjack.png",
+      "img_alt": "ES6 Blackjack Webpage Snapshot"
+    },
+    {
+      "id": "3",
       "title": "Code Karma",
       "date": "December 2, 2016",
       "description": "A motivational open source platform for developers to collaborate with nonprofits.",
@@ -12,7 +34,7 @@
       "img_alt": "Code Karma Webpage Snapshot"
     },
     {
-      "id": "2",
+      "id": "4",
       "title": "Standup",
       "date": "November 7, 2016",
       "description": "A platform for developers around the world to share their bright and dim bulbs, blocked moments, and interact with other developers in a meaningful way.",
@@ -23,7 +45,7 @@
       "img_alt": "Standup Webpage Snapshot"
     },
     {
-      "id": "3",
+      "id": "5",
       "title": "Angular Todos",
       "date": "October 31, 2016",
       "description": "Add, update, filter and check off todos with this todo app built with Angular.",
@@ -34,7 +56,7 @@
       "img_alt": "AngularTodos Webpage Snapshot"
     },
     {
-      "id": "4",
+      "id": "6",
       "title": "Cheddar Bae Biscuits",
       "date": "October 18, 2016",
       "description": "A single page app using the Google Maps API and the Edamam recipe API to give Cheddar Bay Biscuits the spotlight they deserve.",
@@ -45,7 +67,7 @@
       "img_alt": "Cheddar Bae Biscuits Webpage Snapshot"
     },
     {
-      "id": "5",
+      "id": "7",
       "title": "Zoo",
       "date": "October 3, 2016",
       "description": "A fun experiment using vanilla JS constructors and CSS animations to build a 'zoo' of animals with different methods.",
